@@ -1,0 +1,385 @@
+*{
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+body{
+    font-family: sans-serif;
+    margin: 0;
+    overflow-x: hidden;
+}
+h1 {font-size: 2.5em;}
+h2 { font-size: 2.3em;}
+h3 {font-size: 1.6em;}
+p {font-size: 1em;}
+ul {list-style: none;}
+li{font-size: 1em;}
+
+button{
+    font-size: 1em;
+    font-weight: bold;
+    padding: 15px;
+    border-radius: 10px;
+    border: black solid 1.5px;
+    box-shadow: 1;
+    background-color: rgb(177, 250, 226);
+    transition: transform 0.3s;
+}
+button a{
+    color: black;  
+    text-decoration: none;
+}
+button:hover{
+    background-color: aquamarine;
+    transform: scale(1.05);
+}
+.container{
+    max-width: 1600px;
+    margin: auto;
+}
+
+.color-palabra{color: aquamarine;}
+header{
+    background-color: rgb(245,245,245);
+}
+header .logo{
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    color: lightgreen;
+    font-size: 1.6em; 
+}
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header nav{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    padding-bottom: 25px;
+    gap: 300px;
+}
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    transition: transform 0.3s;
+}
+header a:hover{
+    transform: scale(1.05);
+    color: lightgreen;
+}
+#portada{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 95vh;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0, 0, 0, 0.5)
+    )
+    ,url(/assets/portada4.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+#portada h1{
+    color: white;
+}
+
+#sobre_nosotros .container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    text-align: center;
+    gap: 50px;
+    padding: 200px;
+    background-color: white;
+    /* margin: 0; */
+}
+.agencia h2{
+    transition: transform 0.3s;
+}
+.agencia h2:hover{
+    transform: scale(1.05)
+}
+div.img-container{
+    background-image: linear-gradient(0deg,
+                rgba(0, 0, 0, 0.5),
+                rgba(0, 0, 0, 0.5)), url(/assets/imagenagencia.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        transition: transform 0.3s;
+        border-radius: 10px;
+}
+div .img-container:hover{
+    transform: scale(1.05);
+}
+
+
+
+
+
+/* CARDS */
+
+#nuestras_ofertas{
+    background-color: rgb(30,30,30);
+    color: white;
+    text-align: center;
+    width: 100%;
+    height: 100%;  
+}
+#nuestras_ofertas .container{
+    padding: 50px 12px;
+}
+#nuestras_ofertas h2{
+    margin-top: 0;
+}
+#nuestras_ofertas p{
+    display: none;
+}
+
+#nuestras_ofertas .descubrir{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:30px;
+    /* padding: 20px; */
+    /* background-color: aqua; */
+    padding: 100px 12px;
+    height: 100%;
+    width: 100%;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 10px;
+    height:600px;
+}
+
+.card:first-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+        )
+        ,url(/assets/descubrir_asia.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        transition: transform 0.3s;
+        
+}
+.card:first-child:hover{
+    transform: scale(1.05);
+}
+.card:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+        )
+        ,url(/assets/descubrir_america_sur.jpg);
+        transition: transform 0.3s;
+}
+.card:nth-child(2):hover {
+    transform: scale(1.05);
+}
+.card:last-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+        )
+        ,url(/assets/descubrir_africa.jpg);
+        transition: transform 0.3s;
+}
+.card:last-child:hover {
+    transform: scale(1.05);
+}
+/* DESTINOS MAS VISITADOS */
+#destinos_mas_visitados{
+    background-color: rgb(30, 30, 30);
+    color: white;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    /* margin-top: 50px; */
+}
+#destinos_mas_visitados .container {
+    padding: 50px 12px;
+}
+#destinos_mas_visitados  h3{
+    margin-top: 10px;
+    font-size: 2.5em;
+}
+#destinos_mas_visitados .visitar{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    padding: 20px;
+    /* background-color: aqua; */
+    padding: 100px 12px;
+    height: 100%;
+    width: 100%;
+}
+.cards_mas_visitados{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 10px;
+    height: 600px;
+}
+.cards_mas_visitados:first-child{
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url(/assets/corea.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: transform 0.3s;
+
+}
+
+.cards_mas_visitados:first-child:hover {
+    transform: scale(1.05);
+}
+
+.cards_mas_visitados:nth-child(2) {
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url(/assets/brasil.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    transition: transform 0.3s;
+}
+
+.cards_mas_visitados:nth-child(2):hover {
+    transform: scale(1.05);
+}
+
+.cards_mas_visitados:last-child {
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url(/assets/londres2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    transition: transform 0.3s;
+}
+
+.cards_mas_visitados:last-child:hover {
+    transform: scale(1.05);
+}
+
+
+
+
+
+/* FORMULARIO */
+.seccion-registro{
+    padding: 120px 50px;
+    background-image: linear-gradient(0deg,
+                rgba(0, 0, 0, 0.5),
+                rgba(0, 0, 0, 0.5)), url(/assets/portada1.jpg);
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+
+}
+
+.seccion-registro h2{
+    text-align: center;
+    color: white;
+    font-size: 3em;
+}
+.seccion-registro h3{
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+}
+form{
+    max-width: 500px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+input, textarea{
+    padding: 12px;
+    background-color: rgb(215, 225, 228);
+    border: 1px solid aquamarine;
+    border-radius: 10px;
+    color: black;
+}
+.seccion-registro button{
+    cursor: pointer;
+    background-color: lightblue;
+    color: black;
+    padding: 12px;
+    font-weight: bold;
+    border-radius: 50px;
+    transition: transform 0.3s;
+    
+} 
+.seccion-registro button:hover{
+    transform: scale(1.05);
+}
+
+/* FOOTER */
+
+footer {
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.6),
+            rgba(0, 0, 0, 0.6)), url(/assets/avion.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 80px 0;
+    animation: moverFondo 15s ease-in-out infinite alternate;
+}
+@keyframes moverFondo {
+    0% {
+        background-position: center top;
+    }
+
+    100% {
+        background-position: center bottom;
+    }
+}
+footer .container p {
+    color: white;
+    font-size: 1.8em;
+    font-weight: bold;
+    text-align: center;
+
+    /* Animación del logo */
+    animation: brillo 3s infinite ease-in-out;
+}
+
+@keyframes brillo {
+    0% {
+        text-shadow: 0 0 5px lightgreen;
+    }
+
+    50% {
+        text-shadow: 0 0 20px lightgreen, 0 0 40px lightgreen;
+        transform: scale(1.05);
+    }
+
+    100% {
+        text-shadow: 0 0 5px lightgreen;
+        transform: scale(1);
+    }
+}
