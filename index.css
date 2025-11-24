@@ -87,7 +87,7 @@ header a:hover{
         rgba(0,0,0,0.5),
         rgba(0, 0, 0, 0.5)
     )
-    ,url(/assets/portada4.jpg);
+    ,url(./assets/portada4.jpg);
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -114,7 +114,7 @@ header a:hover{
 div.img-container{
     background-image: linear-gradient(0deg,
                 rgba(0, 0, 0, 0.5),
-                rgba(0, 0, 0, 0.5)), url(/assets/imagenagencia.jpg);
+                rgba(0, 0, 0, 0.5)), url(./assets/imagenagencia.jpg);
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
@@ -173,7 +173,7 @@ div .img-container:hover{
         rgba(0, 0, 0, 0.5),
         rgba(0, 0, 0, 0.5)
         )
-        ,url(/assets/descubrir_asia.jpg);
+        ,url(./assets/descubrir_asia.jpg);
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
@@ -189,7 +189,7 @@ div .img-container:hover{
         rgba(0, 0, 0, 0.5),
         rgba(0, 0, 0, 0.5)
         )
-        ,url(/assets/descubrir_america_sur.jpg);
+        ,url(./assets/descubrir_america_sur.jpg);
         transition: transform 0.3s;
 }
 .card:nth-child(2):hover {
@@ -201,7 +201,7 @@ div .img-container:hover{
         rgba(0, 0, 0, 0.5),
         rgba(0, 0, 0, 0.5)
         )
-        ,url(/assets/descubrir_africa.jpg);
+        ,url(./assets/descubrir_africa.jpg);
         transition: transform 0.3s;
 }
 .card:last-child:hover {
@@ -243,7 +243,7 @@ div .img-container:hover{
 .cards_mas_visitados:first-child{
     background-image: linear-gradient(0deg,
             rgba(0, 0, 0, 0.5),
-            rgba(0, 0, 0, 0.5)), url(/assets/corea.jpg);
+            rgba(0, 0, 0, 0.5)), url(./assets/corea.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -258,7 +258,7 @@ div .img-container:hover{
 .cards_mas_visitados:nth-child(2) {
     background-image: linear-gradient(0deg,
             rgba(0, 0, 0, 0.5),
-            rgba(0, 0, 0, 0.5)), url(/assets/brasil.jpg);
+            rgba(0, 0, 0, 0.5)), url(./assets/brasil.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -272,7 +272,7 @@ div .img-container:hover{
 .cards_mas_visitados:last-child {
     background-image: linear-gradient(0deg,
             rgba(0, 0, 0, 0.5),
-            rgba(0, 0, 0, 0.5)), url(/assets/londres2.jpg);
+            rgba(0, 0, 0, 0.5)), url(./assets/londres2.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -292,7 +292,7 @@ div .img-container:hover{
     padding: 120px 50px;
     background-image: linear-gradient(0deg,
                 rgba(0, 0, 0, 0.5),
-                rgba(0, 0, 0, 0.5)), url(/assets/portada1.jpg);
+                rgba(0, 0, 0, 0.5)), url(./assets/portada1.jpg);
         background-size: cover;
         background-position: center center;
         background-repeat: no-repeat;
@@ -342,7 +342,7 @@ input, textarea{
 footer {
     background-image: linear-gradient(0deg,
             rgba(0, 0, 0, 0.6),
-            rgba(0, 0, 0, 0.6)), url(/assets/avion.jpg);
+            rgba(0, 0, 0, 0.6)), url(./assets/avion.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
